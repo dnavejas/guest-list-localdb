@@ -5,55 +5,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Guest List Local DB</title>
-        <style>
-            .container {
-                display: flex;
-            }
-            .container-2 {
-                flex: 1;
-                height: 100vh;
-            }
-            .container-3 {
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .align-right {
-                text-align: right;
-            }
-            .flex-item {
-                flex: 1 0 50%;
-            }
-        </style>
+        <link rel="stylesheet" href="main.css" type="text/css">
         <script src="contactusform.js"></script>
     </head>
     <body>
+        <div class="header">
+            <h1 class="container">Please Leave Us A Comment About Your Experience</h1>
+        </div>
         <div class="container">
             <div class="container-2">
                 <form class="container-3">
                     <div class="align-right flex-item">
                         First Name:
                     </div>
-                    <div class="flex-item"><input type="text" id="firstname"/></div>
+                    <div class="flex-item"><input class="rounded-border" type="text" id="firstname"/></div>
                     <div class="align-right flex-item">
                         Last Name: 
                     </div>
-                    <div class="flex-item"><input type="text" id="lastname" /></div>
+                    <div class="flex-item"><input class="rounded-border" type="text" id="lastname" /></div>
                     <div class="align-right flex-item">
                         Email: 
                     </div>
-                    <div class="flex-item"><input type="email" id="email" /></div>
+                    <div class="flex-item"><input class="rounded-border" type="email" id="email" /></div>
                     <div class="align-right flex-item">
                         Notes: 
                     </div>
-                    <div class="flex-item"><input type="text" id="notes" /></div>
+                    <div class="flex-item"><input class="rounded-border" type="text" id="notes" /></div>
                     <div class="align-right flex-item"></div>
-                    <div class="flex-item"><input type="button" id="submit" value="submit" onclick="add();"/></div>
+                    <div class="flex-item"><input class="rounded-border" type="button" id="submit" value="submit" onclick="add();"/></div>
                 </form>
         </div>
         <div class="container-2">
-            <h1>Guest List</h1>
+            <h2>Guest List</h2>
             <input type="input" value="Refresh Guest List" onclick="readAll();" >
-            <div id="entries">
+            <div style="font-size: 14px;color: black; font-weight: bold;" id="entries">
                 
             </div>
         </div>

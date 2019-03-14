@@ -1,0 +1,39 @@
+body{
+    color: rgb(242, 241, 245);
+    font-size: 24px;
+    background-image: url(hotel.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%; 
+}
+.container {
+    display: flex;
+}
+.container-2 {
+    flex: 1;
+    height: 100vh;
+}
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+.align-right {
+    text-align: right;
+    font-weight: bold;
+}
+.flex-item {
+    flex: 1 0 50%;
+}
+.rounded-border{
+    border-radius: 3px;
+}
+,header {
+    display: flex;
+    text-align: center;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-around;
+}
